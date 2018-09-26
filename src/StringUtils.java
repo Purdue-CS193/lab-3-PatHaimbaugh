@@ -17,7 +17,11 @@ public class StringUtils {
             Ex: res = "SFlannery"
                     --> res = "SFlanner"
          */
-        res.substring(0, 8);
+        if(lastName.length() < 8){
+            res.substring(0, lastName.length());
+        }else{
+            res.substring(0, 8);
+        }
         /* Convert the name to lower-case
             Ex: res = "SFlanner"
                     --> res = "sflanner"
